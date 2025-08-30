@@ -24,9 +24,9 @@ services:
       - UDEV=1                    # Improve USB detection
     ports:
       - 3493:3493
-      - 5050:5050
+#      - 5050:5050
 #      - 3491:3493                # Alternativer Port wenn mehrere Container im Bridge Modus gestartet werden.
-#      - 5051:5050                # Alternativer Port wenn mehrere Container im Bridge Modus gestartet werden.
+      - 5052:5050                # Alternativer Port wenn mehrere Container im Bridge Modus gestartet werden.
     restart: always
     user: root
 #    networks:
