@@ -23,9 +23,9 @@ services:
       - SECRET_KEY=test1234567890 # for password encryption and decryption in the database
       - UDEV=1                    # Improve USB detection
     ports:
-      - 3493:3493
+#      - 3493:3493
 #      - 5050:5050
-#      - 3491:3493                # Alternativer Port wenn mehrere Container im Bridge Modus gestartet werden.
+      - 3492:3493                # Alternativer Port wenn mehrere Container im Bridge Modus gestartet werden.
       - 5052:5050                # Alternativer Port wenn mehrere Container im Bridge Modus gestartet werden.
     restart: always
     user: root
