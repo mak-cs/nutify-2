@@ -1,8 +1,8 @@
 services:
-  nutify-1:
+  nutify-2:
     image: dartsteven/nutify:amd64-latest  # Use amd64-latest or armv7-latest based on your architecture
 #    image: dartsteven/nutify:arm64-latest  # Use amd64-latest or armv7-latest based on your architecture
-    container_name: nutify-1
+    container_name: nutify-2
     privileged: true
     cap_add:
       - SYS_ADMIN
@@ -29,15 +29,15 @@ services:
 #      - 5051:5050                # Alternativer Port wenn mehrere Container im Bridge Modus gestartet werden.
     restart: always
     user: root
-    networks:
-      - caddy_net
+#    networks:
+#      - caddy_net
 #      - caddy_net Test
 #      br0:
 #        ipv4_address: 10.10.80.163
 #        mac_address: 02:42:0a:0a:50:a3
-networks:
-  caddy_net:
-    external: true
+#networks:
+#  caddy_net:
+#    external: true
 #  br0:
 #    external: true
 #  br1:
